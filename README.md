@@ -64,7 +64,23 @@ xdg-open index.html
 
 **Example:**
 - **Input:** "Hello World"
-- **Output:** "卂卆幵卂卄" (Japanese-style character representation)
+- **Output:** "卄乇ㄥㄥㄖ 山ㄖ尺ㄥ刀"
+
+The conversion map (from `script.js`):
+
+```javascript
+const conversionMap = {
+    'A': '卂', 'B': '乃', 'C': '匚', 'D': '刀', 'E': '乇',
+    'F': '下', 'G': '厶', 'H': '卄', 'I': '丨', 'J': 'ﾌ',
+    'K': 'Ҝ', 'L': 'ㄥ', 'M': '爪', 'N': '几', 'O': 'ㄖ',
+    'P': '卩', 'Q': 'Ɋ', 'R': '尺', 'S': '丂', 'T': 'ㄒ',
+    'U': '凵', 'V': 'リ', 'W': '山', 'X': '乂', 'Y': 'ㄚ',
+    'Z': '乙',
+    // ... and lowercase variants
+    'a': '卂', 'b': '乃', 'c': '匚', 'd': '刀', 'e': '乇',
+    // ... and so on
+};
+```
 
 ## 🎨 Customization
 
